@@ -8,10 +8,11 @@
     "ESP_ROM_ELF_DIR": "C:\\Espressif\\tools\\esp-rom-elfs\\20230320/"
   },
   "idf.espIdfPathWin": "C:\\Users\\ezrav\\esp\\v5.2.1\\esp-idf",
-  "idf.openOcdConfigs": [
-    "interface/ftdi/esp32_devkitj_v1.cfg",
-    "target/esp32.cfg"
-  ],
+  "idf.openOcdConfigs": ["board/esp32-bridge.cfg"],
   "idf.pythonBinPathWin": "C:\\Espressif\\python_env\\idf5.2_py3.11_env\\Scripts\\python.exe",
-  "idf.toolsPathWin": "C:\\Espressif"
+  "idf.toolsPathWin": "C:\\Espressif",
+  "files.associations": {
+    "*.cs": "csharp",
+    "stdio.h": "c"
+  }
 }
