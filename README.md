@@ -1,9 +1,12 @@
 # TTDL-Embedded
 
-Using [Robin329's Example](https://github.com/Robin329/esp32-wroom-32/tree/master?tab=readme-ov-file#4-resources) as a base to build off of.
+Libraries:
+
+- ThingsML (by Joseph Verburg (KPN))
 
 To run:
 
-- install VSC ESP-IDF plugin
+- install and open arduino IDE
+- open arduino-attempt.ino
+- install thingsml (for LORA packets)
 - set the port to the right COM port, as reported in Device Manager
-- run with Ctrl + E, D.
