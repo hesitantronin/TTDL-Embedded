@@ -2,3 +2,4 @@ build/
 sdkconfig
 sdkconfig.old
 arduino-attempt/.credentials
+arduino-attempt/.vscode/settings.json
