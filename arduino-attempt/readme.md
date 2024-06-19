@@ -1,23 +1,22 @@
 # TTDL-Embedded
 
-## Summary
+## Samenvatting
 
-This part of the project is supposed to run on the ESP32, it currently measures the value of the sensor, and prints in to SERIAL out. This needs to be expanded with KPN Lora integration, which you should get the keys for from Campus Gouda.
+Dit deel van het project moet draaien op de ESP32. Het meet momenteel de waarde van de sensor en print deze naar de seriële uitgang. Dit moet worden uitgebreid met KPN Lora-integratie, waarvoor je de sleutels kunt krijgen van Campus Gouda.
+Hoe te gebruiken
 
-## How to run
+Om dit uit te voeren, doe je het volgende:
 
-To run this, simply:
+- Sluit de sensor aan op GPIO 35 en GND
+- Verbind de ESP32 met je computer via USB
+- Open arduino-attempt.ino in de Arduino IDE
+- Selecteer de poort waarop de ESP32 is aangesloten en selecteer het juiste board om verbinding te maken
+- Start het project
 
-- connect the sensor to GPIO 35 and GND
-- connect the ESP32 to your computer with USB
-- open `arduino-attempt.ino` in Arduino IDE
-- select the port the ESP32 is connected to, and select the right board to connect it
-- run the project
+## Nog toe te voegen
 
-## To add
+Dit project is nog niet af en moet nog de volgende verbeteringen krijgen:
 
-This is unfinished, and still needs the following improvements:
-
-- connect to KPN Lora, and send the measured values there
-- make a system to send those messages at set times, so you can just not send messages at night for example
-- does not yet record whether someone is sitting with their back against the chair, which might be useful for medical professionals
+- Verbinding maken met KPN Lora en de gemeten waarden daarheen sturen
+- Een systeem maken om deze berichten op ingestelde tijden te verzenden, zodat je bijvoorbeeld 's nachts geen berichten hoeft te verzenden
+- Het registreert nog niet of iemand met zijn rug tegen de stoel zit, wat nuttig kan zijn voor medische professionals
