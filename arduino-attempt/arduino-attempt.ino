@@ -7,14 +7,15 @@
 
 bool isOn = false;
 // the setup function runs once when you press reset or power the board
-void setup() {
+void setup()
+{
   // initialize digital pin LED_BUILTIN as an output.
   Serial.begin(115200);
-  while (!Serial) {
-
+  while (!Serial)
+  {
   }
-  Serial.println("Hi?");
-  delay(10000);
+  Serial.println("Starting measurements");
+  // delay(10000);
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(ADC_PIN, INPUT);
 }
@@ -28,18 +29,19 @@ void loop() {
 }
 */
 
-
-bool measureBool() {
-  return analogRead(ADC_PIN) > 2400;
+bool measureBool()
+{
+  return analogRead(ADC_PIN) > 2300;
 }
 
-
-int measureInt() {
+int measureInt()
+{
   return analogRead(ADC_PIN);
 }
 
 // the loop function runs over and over again forever
-void loop() {
+void loop()
+{
   isOn = !isOn;
   digitalWrite(LED_BUILTIN, isOn ? HIGH : LOW);
   Serial.printf("%d\n", analogRead(ADC_PIN));
